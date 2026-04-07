@@ -1,0 +1,15 @@
+*
+!src/
+!src/fusion/
+!include/
+!include/evt/
+!include/evt/detail/
+!include/evt/fusion/
+!tests/
+!tests/support/
+!README.md
+!.gitignore
+!CMakeLists.txt
+!*.cpp
+!*.h
+!ubsan.cmake
