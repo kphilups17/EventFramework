@@ -63,33 +63,6 @@ target_include_directories(
 )
 
 
-# The Fusion library to link when using the evt/interface module.
-add_library(
-  evt_interface
-  ${PROJECT_SOURCE_DIR}/src/interface/EventFrameworkInterface.cpp
-)
-
-target_link_libraries(
-  evt_interface
-  PUBLIC
-  evt::evt
-)
-
-add_library(
-  evt::interface
-  ALIAS
-  evt_interface
-)
-
-
-target_link_libraries(
-  evt_interface
-  PUBLIC
-  evt::evt
-  fmt::fmt
-)
-
-
 if (NOT IS_SUBPROJECT)
 
   FetchContent_Declare(
@@ -109,6 +82,7 @@ if (NOT IS_SUBPROJECT)
     tests/test_Event.cpp
     tests/test_EventHistory.cpp
     tests/test_MultiEventHandler.cpp
+    tests/test_EventFrameworkInterface.cpp
   )
   target_include_directories(
     tests

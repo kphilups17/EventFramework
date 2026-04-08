@@ -1,10 +1,7 @@
 *
-!src/
-!src/fusion/
 !include/
 !include/evt/
 !include/evt/detail/
-!include/evt/fusion/
 !tests/
 !tests/support/
 !README.md
